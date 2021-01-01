@@ -1,0 +1,72 @@
+baseURL: "https://fabianhauck.de"
+languageCode: "en-us"
+title: "Fabian Hauck"
+theme: "hugo-profile"
+
+disqusShortname:
+Paginate: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+taxonomies:
+  tag: "tags"
+  category: "categories"
+
+params:
+  favicon: "/img/fav.png"
+  description: "Personal website and blog of Fabian Hauck."
+  copyright: "2020"
+
+  custom_css:
+    - /css/custom.css
+
+  # Navbar Menus
+  customMenus:
+    - name: "Posts"
+      Url: "/blog"
+
+  # social
+  name: "Fabian Hauck, B.Sc."
+  social:
+    - link: mailto:contact@fabianhauck.de
+      icon: /img/email_icon.svg
+  github: "https://github.com/fabian-hk"
+  linkedin: "https://www.linkedin.com/in/fabian-hauck"
+  instagram: "https://www.instagram.com/fabi.h08/"
+  twitter: false
+  facebook: false
+
+  # About
+  profile_image: "/img/profile.jpg"
+  descripe_l1_person: >
+    Hi, I'm Fabian, a master student in Informatics at the University of Stuttgart. 
+    I am highly interested in modern computer technology and a passionate open-source
+    developer. My main areas of interest are Cybersecurity and Artificial Intelligence (AI)
+    in which I have already gained practical working experience.
+  descripe_l2_person: >
+    You can find out more about my work on [GitHub](https://github.com/fabian-hk)
+    and my personal [blog](/blog). If you are interested in my work, feel free to contact me!
+  useresume: false
+  resume: ""
+
+  # Things I do
+  usedothings: true
+  Things:
+    - logo: fas fa-user-shield
+      title: Cybersecurity
+      description: "I love penetration testing and designing secure software."
+
+    - logo: far fa-keyboard
+      title: Programming
+      description: "I am an open-source and clean coding enthusiast."
+
+    - logo: fas fa-brain
+      title: Machine Learning
+      description: "I like to develop and train accurate ML models."
+
+  #blog ( Description for seo. If you want to show description in your listing or single page, let's make it true)
+  showdescription: true
+

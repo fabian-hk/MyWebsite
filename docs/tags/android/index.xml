@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Android on Fabian Hauck</title>
+    <link>https://fabianhauck.de/tags/android/</link>
+    <description>Recent content in Android on Fabian Hauck</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://fabianhauck.de/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Improving OAuth App-to-App Security</title>
+      <link>https://fabianhauck.de/blog/improving-app2app/</link>
+      <pubDate>Fri, 27 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://fabianhauck.de/blog/improving-app2app/</guid>
+      <description>OAuth flows on mobile devices can benefit a lot from native apps. With native apps, for example, it is possible to use already existing sessions and biometric authentication features. While apps improve the user experience, they also bring new security challenges to OAuth, especially for services like open banking. This document describes the challenges of redirections between native apps and web applications on Android and iOS and recommends solutions based on currently available features of the mobile operating systems and browsers.</description>
+    </item>
+    
+  </channel>
+</rss>
