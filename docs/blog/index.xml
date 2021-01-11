@@ -6,15 +6,15 @@
     <description>Recent content in Blogs on Fabian Hauck</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.fabianhauck.de/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.fabianhauck.de/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OAuth 2.0 and OpenID Connect for Penetration Testers</title>
       <link>https://www.fabianhauck.de/blog/oauth_for_pentesters/</link>
-      <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 08 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.fabianhauck.de/blog/oauth_for_pentesters/</guid>
-      <description>OAuth 2.0 and OpenID Connect are playing an important role in modern applications. OIDC is used for authentication whereas OAuth is used to grant access to protected resources. Therefore, it is important to correctly implement and harden those techniques against malicious actors.
-This presentation gives a short introduction to OpenID Connect and OAuth 2.0 and describes the most important flows. After that, common attacks and their mitigations are shown and in the end, there is a summary and an outlook on new developments in the OAuth community.</description>
+      <description>OAuth 2.0 and OpenID Connect are playing an important role in modern web applications when it comes to security. OIDC is used for authentication, whereas OAuth is used to grant access to protected resources. Therefore, it is important to implement those techniques correctly and harden them against malicious actors who want to steal the access tokens.
+The following presentation gives a short introduction to OAuth 2.0 and OpenID Connect and describes the most important protocol details.</description>
     </item>
     
     <item>
@@ -32,8 +32,8 @@ This presentation gives a short introduction to OpenID Connect and OAuth 2.0 and
       <pubDate>Tue, 29 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://www.fabianhauck.de/blog/security_training/</guid>
-      <description>Nowadays, 60 percent of the world&amp;rsquo;s population has access to the internet1). Users spend on average three hours a day online2) browsing social media, shopping, or doing bank transactions.
-While using online services, it is always important to keep your data and accounts secure. If you do not pay attention to what you are doing online, you can easily be attacked by hackers as the attack on the iCloud of Jennifer Lawrence a few years ago showed.</description>
+      <description>Nowadays, 60 percent of the world&amp;rsquo;s population has access to the internet1). Users spend on average three hours a day online2) with shopping, browsing social media, or doing bank transactions.
+While using online services, it is always important to keep your data and accounts secure. If you do not pay attention to what you are doing online, you can easily be attacked by hackers as the attack on the iCloud of Jennifer Lawrence a few years ago showed3).</description>
     </item>
     
   </channel>

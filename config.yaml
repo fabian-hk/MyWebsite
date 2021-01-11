@@ -43,12 +43,12 @@ params:
   profile_image: "/img/profile.jpg"
   descripe_l1_person: >
     Hi, I'm Fabian, a master student in Informatics at the University of Stuttgart. 
-    I am highly interested in modern computer technology and a passionate open-source
+    I am highly interested in modern computer technologies and a passionate open-source
     developer. My main areas of interest are Cybersecurity and Artificial Intelligence (AI)
     in which I have already gained practical working experience.
   descripe_l2_person: >
     You can find out more about my work on [GitHub](https://github.com/fabian-hk)
-    and my personal [blog](/blog). If you are interested in my work, feel free to contact me!
+    and on my personal [blog](/blog). If you are interested in my work, feel free to contact me!
   useresume: false
   resume: ""
 
