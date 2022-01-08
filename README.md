@@ -3,7 +3,7 @@
 ## Usage
 
 - Dev server: ``hugo server -D``
-- Page generation: ````
+- Page generation: ``hugo -D -d docs/``
 
 ## Theme
 
