@@ -42,7 +42,7 @@
 
 
 <meta name="description" content="" />
-<title>Cyber Security Awareness Training</title>
+<title>Workshop: Data Security and Privacy</title>
 <style>
   article {
     font-family: 'Peddana', serif;
@@ -221,7 +221,7 @@
       <div class="col-md-8">
         
         <div class="p-2">
-          <h1>Cyber Security Awareness Training</h1>
+          <h1>Workshop: Data Security and Privacy</h1>
           <div class="text-muted">
             
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar" fill="currentColor"
@@ -231,7 +231,7 @@
               <path fill-rule="evenodd"
                 d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z" />
             </svg>
-            Sep 29, 2020
+            Jan 8, 2022
 
             
             
@@ -277,7 +277,7 @@
               
               
               <span class="text-muted px-2">/</span>
-              <li><a href="/blog/security_training">Security training</a></li>
+              <li><a href="/blog/security_privacy_workshop">Security privacy workshop</a></li>
               
               
               
@@ -292,143 +292,23 @@
 
         
         <article>
-          <p>Nowadays, 60 percent of the world&rsquo;s population has access to the internet<sup>1)</sup>. Users spend on average three hours a day online<sup>2)</sup> with shopping, browsing social media, or doing bank transactions.</p>
-<p>While using online services, it is always important to keep your data and accounts secure. If you do not pay attention to what you are doing online, you can easily be attacked by hackers as the attack on the iCloud of Jennifer Lawrence a few years ago showed<sup>3)</sup>.</p>
-<p>Therefore it is important for users to learn how to spot malicious websites on the internet and how to secure accounts. In the following, you can find the presentation of a workshop I conducted for the <a href="https://jpbw.de/">Jugendpresse BW</a>. The workshop is designed for people who want to build up a basic knowledge in cybersecurity. It covers the following topics:</p>
-<ul>
-<li>Generating and storing secure passwords</li>
-<li>Using 2-factor-authentication</li>
-<li>Identifying phishing websites and emails</li>
-<li>Securely surfing the web via HTTPS</li>
-<li>Securing devices (e.g. Smartphones, Laptops, &hellip;) and personal data</li>
-</ul>
-<script type="text/javascript" src="/js/pdf-js/build/pdf.js"></script>
-<style>
-#the-canvas {
-  border: 1px solid black;
-  direction: ltr;
-  width: 100%;
-  height: auto;
-}
-#paginator{
-    text-align: center;
-    margin-bottom: 10px;
-}
-</style>
-<div id="paginator">
-    <button id="prev" class="btn btn-secondary">Previous</button>
-    <button id="next" class="btn btn-secondary">Next</button>
-    &nbsp; &nbsp;
-    <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
-</div>
-<div id="embed-pdf-container">
-    <canvas id="the-canvas"></canvas>
-</div>
-<script type="text/javascript">
-window.onload = function() {
+          
+ 
 
 
 
-var url = "\/resources\/DataSecurityWorkshop.pdf";
+<link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet" type="text/css">
+<div style="font-family:'Poppins'; font-size:20px; font-style:normal; font-weight:normal">
+<p><strong>Wenn du wissen willst, wie du dich im Internet vor Hackerangriffen und Spionage schützen kannst, dann bist du in diesem Workshop genau richtig! Die behandelten Inhalte sind für alle relevant, die ein Smartphone oder einen Laptop besitzen.</strong></p>
 
+<p>
+Die Digitalisierung hat in den letzten Jahren unser Leben massiv verändert. Durch die Corona-Pandemie wurde diese Entwicklung zusätzlich stark beschleunigt. Während einerseits viele Dinge vereinfacht werden, entstehen andererseits neue Gefahren. Die Anzahl der Cyberangriffe ist im letzten Jahr rasant angestiegen und fast jeden Tag kann man in den Nachrichten von neuen Angriffen lesen. Da stellt sich natürlich die Frage, wie man sich als Internetnutzer angemessen schützen kann. Genau um diese Frage wird es im ersten Teil dieses Workshops gehen.
+</p>
 
-var pdfjsLib = window['pdfjs-dist/build/pdf'];
-
-
-pdfjsLib.GlobalWorkerOptions.workerSrc = '/js/pdf-js/build/pdf.worker.js';
-
-
-var pdfDoc = null,
-    pageNum = 1,
-    pageRendering = false,
-    pageNumPending = null,
-    scale = 3,
-    canvas = document.getElementById('the-canvas'),
-    ctx = canvas.getContext('2d');
-
-
-
-function renderPage(num) {
-  pageRendering = true;
-  
-  pdfDoc.getPage(num).then(function(page) {
-    var viewport = page.getViewport({scale: scale});
-    canvas.height = viewport.height;
-    canvas.width = viewport.width;
-
-    
-    var renderContext = {
-      canvasContext: ctx,
-      viewport: viewport
-    };
-    var renderTask = page.render(renderContext);
-
-    
-    renderTask.promise.then(function() {
-      pageRendering = false;
-      if (pageNumPending !== null) {
-        
-        renderPage(pageNumPending);
-        pageNumPending = null;
-      }
-    });
-  });
-
-  
-  document.getElementById('page_num').textContent = num;
-}
-
-
-
-function queueRenderPage(num) {
-  if (pageRendering) {
-    pageNumPending = num;
-  } else {
-    renderPage(num);
-  }
-}
-
-
-
-function onPrevPage() {
-  if (pageNum <= 1) {
-    return;
-  }
-  pageNum--;
-  queueRenderPage(pageNum);
-}
-document.getElementById('prev').addEventListener('click', onPrevPage);
-
-
-
-function onNextPage() {
-  if (pageNum >= pdfDoc.numPages) {
-    return;
-  }
-  pageNum++;
-  queueRenderPage(pageNum);
-}
-document.getElementById('next').addEventListener('click', onNextPage);
-
-
-
-pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
-  pdfDoc = pdfDoc_;
-  document.getElementById('page_count').textContent = pdfDoc.numPages;
-
-  
-  renderPage(pageNum);
-});
-}
-
-</script>
-<p><a href="/resources/DataSecurityWorkshop.pdf">Open PDF in browser</a></p>
-<p>Sources:</p>
-<ol>
-<li><a href="https://www.statista.com/statistics/617136/digital-population-worldwide/">Statista - Digital population worldwide</a></li>
-<li><a href="https://www.statista.com/statistics/319732/daily-time-spent-online-device/">Statista - Daily time spent online device</a></li>
-<li><a href="https://bgr.com/2016/03/16/jennifer-lawrence-nudes-icloud-hack/">How the Jennifer Lawrence iCloud hack really happened</a></li>
-</ol>
+<p>
+Der zweite Teil wird sich rund um das Thema Privatsphäre im Internet drehen. Euch ist bestimmt schon mal aufgefallen, dass ihr auf allen möglichen Webseiten Werbung für Produkte angezeigt bekommt, die ihr euch bei einer anderen Gelegenheit in einem online Shop angeschaut habt. Doch wie funktioniert das eigentlich? Und wie können wir verhindern, dass alle unsere online Aktivitäten gespeichert und analysiert werden? Vielleicht denkt ihr euch, dass Privatsphäre ja nicht so wichtig ist, weil ihr nichts zu verbergen habt. Dazu abschließend ein Zitat von Edward Snowden: "Arguing that you don't care about the right to privacy because you have nothing to hide is no different than saying you don't care about free speech because you have nothing to say."
+</p>
+ </div>
 
         </article>
 

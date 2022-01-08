@@ -5,6 +5,7 @@ theme: "hugo-profile"
 
 disqusShortname:
 Paginate: 3
+font: "Default"
 
 markup:
   goldmark:
@@ -18,7 +19,7 @@ taxonomies:
 params:
   favicon: "/img/fav.png"
   description: "Personal website and blog of Fabian Hauck."
-  copyright: "2020"
+  copyright: "2022"
 
   custom_css:
     - /css/custom.css

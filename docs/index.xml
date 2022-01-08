@@ -6,7 +6,17 @@
     <description>Recent content on Fabian Hauck</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.fabianhauck.de/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.fabianhauck.de/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Workshop: Data Security and Privacy</title>
+      <link>https://www.fabianhauck.de/blog/security_privacy_workshop/</link>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.fabianhauck.de/blog/security_privacy_workshop/</guid>
+      <description>Wenn du wissen willst, wie du dich im Internet vor Hackerangriffen und Spionage schützen kannst, dann bist du in diesem Workshop genau richtig! Die behandelten Inhalte sind für alle relevant, die ein Smartphone oder einen Laptop besitzen.
+ Die Digitalisierung hat in den letzten Jahren unser Leben massiv verändert. Durch die Corona-Pandemie wurde diese Entwicklung zusätzlich stark beschleunigt. Während einerseits viele Dinge vereinfacht werden, entstehen andererseits neue Gefahren. Die Anzahl der Cyberangriffe ist im letzten Jahr rasant angestiegen und fast jeden Tag kann man in den Nachrichten von neuen Angriffen lesen.</description>
+    </item>
+    
     <item>
       <title>OAuth 2.0 and OpenID Connect for Penetration Testers</title>
       <link>https://www.fabianhauck.de/blog/oauth_for_pentesters/</link>

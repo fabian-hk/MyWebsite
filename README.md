@@ -1,5 +1,10 @@
 # My Website
 
+## Usage
+
+- Dev server: ``hugo server -D``
+- Page generation: ````
+
 ## Theme
 
 [hugo-profile](https://github.com/gurusabarish/hugo-profile)
